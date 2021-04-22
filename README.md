@@ -2,7 +2,7 @@
 
 Design tests for Analytics functionality on a Battery Monitoring System.
 
-Fill the parts marked '_enter' in the **Tasks** section below.
+Fill the parts marked in the **Tasks** section below.
 
 ## Analysis-functionality to be tested
 
@@ -70,8 +70,8 @@ Enter one part that's real and another part that's faked/mocked.
 |--------------------------|--------------|-----------------------------|---
 Read input from server     | csv file     | internal data-structure     | Fake the server store
 Validate input             | csv data     | valid / invalid             | None - it's a pure function
-Notify report availability | _enter input | _enter output               | _enter fake or mock
-Report inaccessible server | _enter input | _enter output               | _enter fake or mock
-Find minimum and maximum   | _enter input | _enter output               | _enter fake or mock
-Detect trend               | _enter input | _enter output               | _enter fake or mock
-Write to PDF               | _enter input | _enter output               | _enter fake or mock
+Notify report availability | 	pdf file    | report notification (email) | Mock notification function
+Report inaccessible server | server access error | report server connection error | fake - Server is not accessible
+Find minimum and maximum   | 	csv file |  Minimum and Maximum value in pdf, calculated using csv data | None - it's a pure function
+Detect trend               | 	csv file |  Update the trends of data with Time and date values (Timestamp) | None - it's a pure function
+Write to PDF               | analyzed output data from csv | Generated PDF report | Fake the csv to PDF converter
